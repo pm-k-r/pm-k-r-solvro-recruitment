@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: testdb-postgres
+    restart: no
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "unguessableWordOfPass123"
+      POSTGRES_DB: testdb
+    ports:
+      - "5432:5432"
