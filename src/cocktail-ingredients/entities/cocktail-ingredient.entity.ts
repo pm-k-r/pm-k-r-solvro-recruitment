@@ -6,7 +6,7 @@ import {
   PrimaryColumn,
   type Relation,
 } from 'typeorm';
-import { Cocktail } from './cocktail.entity.js';
+import { Cocktail } from '../../cocktails/entities/cocktail.entity.js';
 import { Ingredient } from '../../ingredients/entities/ingredient.entity.js';
 
 export enum Unit {

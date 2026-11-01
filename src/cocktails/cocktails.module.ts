@@ -3,10 +3,10 @@ import { CocktailsService } from './cocktails.service.js';
 import { CocktailsController } from './cocktails.controller.js';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Cocktail } from './entities/cocktail.entity.js';
-import { CocktailIngredient } from './entities/cocktail-ingredient.entity.js';
+import { CocktailIngredientsInterceptor } from '../cocktail-ingredients/cocktail-ingredients.interceptor.js';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Cocktail, CocktailIngredient])],
+  imports: [TypeOrmModule.forFeature([Cocktail])],
   controllers: [CocktailsController],
   providers: [CocktailsService],
 })

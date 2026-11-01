@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Category } from '../../categories/entities/category.entity.js';
-import { CocktailIngredient } from './cocktail-ingredient.entity.js';
+import { CocktailIngredient } from '../../cocktail-ingredients/entities/cocktail-ingredient.entity.js';
 
 @Entity('cocktails')
 export class Cocktail {

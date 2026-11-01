@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CocktailsModule } from './cocktails/cocktails.module.js';
 import { CategoriesModule } from './categories/categories.module.js';
 import { IngredientsModule } from './ingredients/ingredients.module.js';
+import { CocktailIngredientsModule } from './cocktail-ingredients/cocktail-ingredients.module.js';
 import Joi from 'joi';
 
 @Module({
@@ -41,6 +42,8 @@ import Joi from 'joi';
     CategoriesModule,
 
     IngredientsModule,
+
+    CocktailIngredientsModule,
   ],
 
   controllers: [AppController],
